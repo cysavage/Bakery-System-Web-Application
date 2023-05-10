@@ -1,7 +1,10 @@
 # Vibe-Guide-Web-Application
 **Currently hosted at hostzinger at domain @5/10/23
 vibeguide.co
+
+
 Created By: Dax Shethia, Jayson Gonzalez & Cyril K. Thomas
+
 What is Vibe Guide?
 
 Vibeguide is a web application that uses PHP, HTML, JavaScript, CSS, and the Mapbox API to help users discover the best-kept secrets of Long Island effortlessly. It's a user-friendly website that's dedicated to uncovering unique locations and exploring the vibes they offer. Vibes are the intangible essence that a place exudes, and Vibeguide allows users to rate each location positively or negatively and leave comments about their experiences. Registered users can customize their profiles, suggest new locations and vibes, and connect with other users. Admins maintain the integrity and safety of the platform and have an array of capabilities, including editing location information, managing user accounts, and adding new vibes to the database. Vibeguide is the ultimate companion for anyone looking to explore the hidden treasures of Long Island, whether they're a seasoned Long Islander or a first-time visitor.
