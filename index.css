@@ -1,0 +1,716 @@
+body {
+	text-align: center;
+	background-color: black;
+	color:white;
+	margin:0;
+	padding:0;
+	
+	font-family: Helvetica; 
+}
+header {
+	height: 120px;
+	background: #262626;
+	width: 100%;
+	z-index: 10;
+	position: fixed;
+}
+
+
+
+@media screen and (min-width: 1000px) {
+/* Navbar links */
+    nav {
+        display:inline;
+    	z-index:1;
+    	box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    }
+    nav a {
+        float: right;
+    	text-decoration: none;
+    	font-family: Helvetica;
+    	font-size: 25px;
+    	margin-top:50px;
+        margin-right:2%;
+    	color: #fff;
+    	text-align: center;
+    }
+    .img-fluid {
+        margin-top: 15px;
+        width:auto;
+        height: 90px;
+        object-fit: contain;
+        float:left;
+        margin-left:2%;
+    }
+    nav > h2 {
+        float: right;
+        margin-right: 15px;
+    }
+    
+    
+    
+    
+/* Index Body Styling */
+    .content-area {
+    	z-index: 1;
+    	width: auto;
+    	position: relative;
+    	top: 100px;
+    	min-height: 1100px;
+    	max-height: 3440px;
+    	background: linear-gradient(170deg, #262626 30%, #1b7a42 45%, #2e9e5c 65%);
+    	padding-bottom: 50px;
+    	padding-top: 50px;
+    }
+    .content-area h2 {
+    	font-family: Helvetica;
+    	letter-spacing: 4px;
+    	padding-top: 30px;
+    	font-size: 40px;
+    	margin: 0;
+    	background-color: black;
+    }
+    h1 {
+        font-size:25px;
+        margin-bottom:10px;
+    }
+    
+    .content-area p {
+    	padding: 2% 0px;
+    	font-family: Helvetica;
+    	line-height: 30px;
+    }
+    .body-image {
+        padding-top: 150px;
+        padding-bottom: 180px;    
+    	background: linear-gradient(170deg, #262626 40%, #66347F 55%, #9E4784 70%, #b8589b 75%);
+    	background-position: center;
+    	background-size: cover;
+    	height:80vh;
+    }
+    .loginStyle{
+        padding-top:150px;
+    }
+    .body-image2 {
+        padding-bottom: 40px;
+        background-repeat: no-repeat;
+    	background: linear-gradient(170deg, #262626 40%, #1A5F7A  55%, #159895   70%, #57C5B6 75%);
+    	background-position: center;
+    	background-size: cover;
+    	height: 98vh;
+    	overflow: hidden;
+    }
+    .body-image3 {
+        padding-top: 150px;
+        padding-bottom: 40px;
+    	background: linear-gradient(170deg, #262626 40%, #4E31AA 55%, #2F58CD 70%, #4c73e0 75%);
+    	background-position: center;
+    	background-size: cover;
+    	height: 90vh;
+    }
+    .body-image5 {
+        padding-top: 150px;
+        padding-bottom: 245px;
+    	background: linear-gradient(170deg, #262626 40%, #0fb8ad 55%, #1fc8db 70%, #2cb5e8 75%);
+    	background-position: center;
+    	background-size: cover;
+    	height: 100%;
+    }
+    #user_input, #user_input2, #user_input3, .inputStyle, .contactPage input, .contactPage textarea, .leftSide input, .leftSide textarea {
+    	font-size: 1em;
+    	width:90%;
+    	border: 3px solid grey;
+    	border-radius: 10px;
+    	background-color: #555;
+    	padding: 8px;
+    	margin: 10px 0px 10px 0px;
+    	color: #9fadbd;
+    }
+    
+    .searchDiv {
+    	float:left;
+    	padding-left:50px;
+    	width:50%;
+    }
+    
+    #newmap {
+    	border-radius:15px;
+    	border: 12px solid #04AA6D;
+    	margin-right:30px;
+    	margin-top: 5px;
+    	float:right;
+    	height:75vh;
+    	width:35%;
+    	margin-bottom: 20px;
+    	color: black;
+    	display: inline-flex;
+    }
+    
+    
+    
+    
+    
+/* Vibe Filter Styling */
+    .vibeSelect {
+    	float: left;
+    	font-size: 1.5em;
+    	border: 3px solid grey;
+    	border-radius: 10px;
+    	background-color: #555;
+    	padding: 8px;
+    	margin: 20px 0px 10px 0px;
+    	color: #9fadbd;
+    }
+    .searchDiv div button {
+        width: 90px;
+    	height: 40px;
+    	background-color: #04AA6D;
+    	border-radius: 6px;
+    	color: white;
+    	border: none;
+    	float: left;
+    	margin: 25px 0px 10px 10px;
+    }
+    .searchDiv input {
+        float:left;
+    }
+    
+    
+    
+    
+/* Locations Table Styling */	
+    .table {
+    	display: block;
+    	float: left;
+    	width: 100%;
+    	height: 100%;
+    	border-collapse: collapse;
+    	font-size: .8em;
+    	text-align:left;
+    }
+    .table button{
+        background-color:transparent;
+        width:55px;
+        height:55px;
+        border:0px;
+    }
+    .table form{
+        position:relative;
+        float:right;
+        text-align:center;
+    }
+    .table tr { border: solid 5px grey; }
+    .table tr:hover { border: solid 5px #04AA6D; }
+    .table tr, .table tr:hover {
+        transition: 0.25s;
+        display: block;
+        margin: 5px;
+    	border-radius: 10px;
+    	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        background-color: #555;
+    }
+    .commentsTable {
+        border:none; background-color:#555; border-radius:10px; color:white;
+        
+    }
+    .table td {
+    	padding: 5px 30px 0px 30px;
+    }
+    .location-img img {
+        border-radius: 15%;
+    	width: 200px;
+        height: 200px;
+        transition: 0.5s;
+        opacity: 0.80;
+        position:relative;
+        object-fit: cover;
+    }
+    .location-img img:hover {
+        transition: 0.5s;
+        opacity: 1;
+    }
+    .leftSide{
+        display: inline-flex;
+    	padding: 12px 12px 12px 12px;
+    	width:55%;
+    	max-height: 900px;
+    	overflow-y: scroll;
+    	background-color: #2e2e2e;
+    	border: 10px solid #04AA6D;
+    	border-radius: 10px;
+    	transition: 0.5s;
+    }
+    
+    .close_table {
+        height: 30px;
+        width:30px;
+        float: right;
+        margin-right: -5px;
+        font: bold;
+        color: white;
+        background-color: #04AA6D;
+        border-radius: 5px;
+    }
+    
+    
+    
+    
+/* Sign Up form Styling */
+    .signup-form {
+    	padding-top: 150px;
+    	padding-bottom:55px;
+    }
+    
+    .profile-form-table{
+        margin-left: auto;
+    	margin-right: auto;
+    	width: 50%;
+    	background-color:  #555;
+    	border-radius: 10px;
+    }
+    .signup-form-table{
+    	margin-left: auto;
+    	margin-right: auto;
+    	width: 80%;
+    	background-color:  #555;
+    	border-radius: 10px;
+        border: 10px solid #04AA6D;
+    }
+    .signup-form-table a{
+        text-decoration: none;
+        color: #04AA6D;
+    }
+    .signup-form-table table tr:first-child  {
+    	text-align: center;
+    	font-family: Helvetica;
+    }
+    
+    .signup-form-table td {
+    	padding-top: 1px;
+    	padding-bottom: 1px;
+    }
+    
+    .signup-form-table input {
+        font-size: 1em;
+    	border: 3px solid grey;
+    	border-radius: 10px;
+    	background-color: #555;
+    	padding: 8px;
+    	margin: 10px 0px 10px 0px;
+    	color: #9fadbd;
+    	width: 50%;
+    	border-radius: 5px;
+    }
+    .signup-form-table button {
+    	width: 90px;
+    	height: 40px;
+    	background-color: #04AA6D;
+    	border-radius: 6px;
+    	color: white;
+    	border: none;
+    }
+    .registration-images {
+    	width: 80%;
+    }
+    
+    
+    
+    
+/* Mapbox API styling */
+    .mapboxgl-ctrl-geocoder {
+    	width: 400px;
+    	font-size: 14px;
+    	border-radius: 10px;
+    	border: 10px;
+    }
+    .mapboxgl-ctrl-geocoder input[type='text'] {
+    	width: 330px;
+    	max-height:100px;
+    	padding: 28px;
+    	border: none;
+    	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    	background-color: #f5f5f5;
+    	font-size: 15px;
+    }
+    .mapboxgl-ctrl-geocoder .suggestions {
+    	max-height: 700px;
+    	overflow-y: scroll;
+    	background-color: #fff;
+    	border-radius: 4px;
+    	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    	padding: 0px;
+    }
+    .mapboxgl-ctrl-geocoder .suggestion:hover {
+    	background-color: #f5f5f5;
+    }
+    .mapboxgl-popup-content {
+      background-color: #555;
+      width: 150px;
+      height: 150px;
+      border: 8px solid #04AA6D;
+      border-radius: 6px;
+      color: white;
+      float: left;
+    }
+    .mapboxgl-popup-content img {
+        max-width:95px;
+        max-height:95px;
+        border-radius:5px;
+    }
+    .mapboxgl-popup-content button {
+        max-width:35px;
+        max-height:35px;
+        border: none;
+        font-size: 2em;
+        display: inline;
+        background: #555;
+    }
+   
+      
+      
+      
+      
+      
+/* Profile Page Bio */
+    .body-image6 {
+        padding-bottom: 5%;
+    	background: linear-gradient(170deg, #262626 40%, #0fb8ad 55%, #1fc8db 70%, #2cb5e8 75%);
+    	background-position: center;
+    	background-size: cover;
+    	height: 90vh;
+    }
+    .body-image4 .bioEdit input {
+    	background-color: #555;
+    	color: white;
+    }
+    .body-image4 {
+        height: 100%;
+        background: linear-gradient(170deg, #262626 30%, #81B214 45%, #BFDCAE 60%, #F1F1E8 75%);
+        margin-top: -69px;
+    }
+    .userInfo img, .manage img {
+        width: 150px;
+        height: 150px;
+        border-radius: 20%;
+        transition:.5s;
+        border:7px solid #555;
+    }
+    .userInfo img:hover, .manage img:hover {
+        background-color:white;
+        opacity:.40;
+        border:7px solid #04AA6D;
+        
+    }
+    .profile-img2 {
+        width: 55px;
+        height: 55px;
+        border-radius: 80%;
+        border:5px solid #222421;
+    }
+    
+    
+    
+/* Profile Page Styling */
+    .flexArea {
+        width: 70%;
+        display: inline-flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: stretch;
+        padding-top: 120px;
+        margin: 35px;
+    	}
+    .flexArea div {
+        background-color: #555;
+        display: inline-block;
+        border-radius: 20px;
+        padding:15px;
+        border: 10px solid #04AA6D;
+        margin: 10px;
+    }
+    .flexArea .userInfo {
+        margin-top:5%;
+        flex-basis: 25%;
+        flex-grow: 1;
+        height: 500px;
+        width:20%;
+    }
+    .flexArea .favoriteBox {
+        flex-basis: 25%;
+        flex-grow: 1;
+        max-width: 600px;
+        height: 550px;
+        overflow-y:scroll;
+        position:relative;
+
+    }
+    .favBox2{
+        top:50px;
+    }
+    .flexArea .friend-section {
+        margin-top:5%;
+        flex-basis: 25%;
+        flex-grow: 1;
+        width: 40%;
+        height: 500px;
+        overflow-y:scroll;
+    }
+    .flexArea .profileAdd {
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex: auto;
+        flex-basis: 50%;
+    	max-height:750px;
+    	overflow-y:auto;
+    }	
+    .profileAdd table {
+    	width: 100%;
+    }
+    .body-image4 button, .contactPage button, .signup-form button {
+        width: 90px;
+    	height: 40px;
+    	background-color: #04AA6D;
+    	border-radius: 6px;
+    	color: white;
+    	border: none;
+    	margin: 10px 0px 10px 10px;
+    }
+    .profileSelect, .signup-form select, .cPostSection select {
+        font-size: 1em;
+    	border: 3px solid grey;
+    	border-radius: 10px;
+    	background-color: #555;
+    	padding: 8px;
+    	margin: 20px 0px 10px 0px;
+    	color: #9fadbd;
+    }
+    
+    
+    
+/* Admin Panel Styling */
+    .master {
+        width: 80%;
+    	display: inline-flex;
+    	flex-direction: row;
+    	flex-wrap:wrap;
+    }
+    .master div {
+    	background-color: #555;
+    	display: inline-block;
+    	border-radius: 20px;
+    	padding:20px 0px 20px 0px;
+    }
+    .master input {
+        font-size: 1em;
+        width: 30%;
+        border: 3px solid grey;
+    	border-radius: 10px;
+    	background-color: #555;
+    	padding: 8px;
+    	margin: 10px 0px 10px 0px;
+    	color: #9fadbd;
+    }
+    .master button {
+    	width: 90px;
+    	height: 30px;
+    	background-color: #04AA6D;
+    	border-radius: 6px;
+    	color: white;
+    	border: none;
+    }
+    .manage {
+        flex-grow: 1;
+    	margin: 10px;
+    	height: 100%;
+    	flex-basis: 50%;
+    	border: 10px solid #04AA6D;
+    	position:relative;
+    }
+    .profilemanage {
+        flex-grow: 1;
+    	margin: 10px;
+    	height: 100%;
+    	flex-basis: 50%;
+    	max-width: 580px;
+    	border: 10px solid #04AA6D;
+    	position:relative;
+    }    
+    .vibelocation{
+        bottom:320px;
+    }
+    .userList, .vibeList, .locationList {
+    	flex-grow: 1;
+    	flex-shrink: 1;
+    	flex: auto;
+    	margin: 10px;
+    	max-height:500px;
+    	min-width:90%;
+    	overflow-y:auto;
+    	flex-basis: 100%;
+    	text-align:center;
+    }
+    .control {
+    	flex-grow: 1;
+    	flex-shrink: 1;
+    	flex: auto;
+    	margin: 10px;
+    	height:400px;
+    	max-width:40%;
+    	text-align:center;
+    }
+    .adminTable {
+    	width:100%;
+    }
+    
+    
+    
+    
+    
+    
+/* Contact page Styling */
+    .contactPage {
+        background-color: #555;
+        display: inline-block;
+        border-radius: 20px;
+        padding:15px;
+        border: 10px solid #04AA6D;
+        width:50%;
+    }
+    .contactPage img {
+        height: 30px;
+        width: 30px;
+        object-fit: contain;
+    }
+    
+
+
+
+
+/* favorites_table */
+    .favorites_table img {
+        width: 65px;
+        height: 65px;
+        border-radius: 7px;
+    }
+    .favorites_table tr {
+        border: 5px solid #04AA6D;
+    }
+    .table .add_favorite {
+    	color: white;
+    	font-size:25px;
+    	border: none;
+    	height: 120px;
+    }
+    .table .add_favorite:hover {
+        transition: 0.25s;
+        color: #04AA6D;
+    }
+    
+    .table .favorited{
+        color: #04AA6D;
+        font-size:25px;
+    	border: none;
+    	height: 120px;
+    }
+   
+    
+    
+/* Comment Section Styling */
+    .cSection {
+        width: 100%;
+    }
+    .cSection p {
+        text-align: center;        
+    }
+    }
+    .comments-container {
+        width:100%;
+        height:250px;
+        overflow-y:scroll;
+        position: relative;
+    }
+    /* Hide Scrollbar Styling */
+    /* width */
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: #888;
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: #04AA6D;
+    }
+    .rating {
+        display: inline;
+        position:absolute;
+        top:35px;
+        right:20px;
+        
+    }
+    .fa {
+        font-size:20px;
+        color:white;
+    }
+    .fa:hover {
+        transition: .5s;
+        color:#04AA6D;
+    }
+    
+    .hidden {
+      display: none;
+    }
+
+
+
+
+
+/* Report Dropdown */
+.drop-wrapper {
+    display: inline-block;
+    position: relative;
+}
+.drop-menu {
+    display: none;
+    position: absolute;
+    width: 100px;
+    font-size: .90em;
+    border-radius: 3px;
+}
+.drop-wrapper:hover .drop-menu {
+    display: block;
+    
+}
+.dropright {
+    transition: .5s;  
+    right: 0%;
+    left:100%;
+    top: -150%;
+    margin-left: 0.125rem;
+}
+.drop-menu button {
+    display: block;
+    background-color: #04AA6D;
+    color: white;
+    margin: 5px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 7px;
+    
+}
+.drop-menu button:hover {
+    transition: .5s;    
+    background-color: red;
+}
+.drop-wrapper .btn {
+    color: #04AA6D;
+    font-size: 1.15em;
+}
